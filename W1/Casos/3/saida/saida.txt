@@ -1,0 +1,11 @@
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 
+Lista de produtos cadastrados:
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 

@@ -17,15 +17,16 @@ void produtos_liberar_memoria(Produtos* produto) {
 }
 
 Produtos** produtos_lista_criar(int *tamanho_lista) {
-    
+    Produtos ** p = (Produtos *) malloc ( (*tamanho_lista) * sizeof(Produtos*) );
+    return (*p);
 }
 
-void produtos_lista_cadastrar(Produtos **lista_produtos, int *tamanho_lista){
+void produtos_lista_cadastrar(Produtos **lista_produtos, int *tamanho_alocado, int *tamanho_lista) {
 
 }
 
 
-void produtos_lista_exibir(Produtos **lista_produtos, int *tamanho_lista);{
+void produtos_lista_exibir(Produtos **lista_produtos, int *tamanho_lista) {
     int i = 0, total = sizeof(lista_produtos)/sizeof(lista_produtos[0]);
 
     printf("Lista de produtos cadastrados:\n");
@@ -37,7 +38,7 @@ void produtos_lista_exibir(Produtos **lista_produtos, int *tamanho_lista);{
     }
 }
 
-void produtos_lista_liberar_memoria(Produtos** lista_produtos, int *tamanho_lista); {
+void produtos_lista_liberar_memoria(Produtos** lista_produtos, int *tamanho_lista) {
     int i = 0, total = sizeof(lista_produtos)/sizeof(lista_produtos[0]);
     for (i = 0; i < total; i++) 
         produtos_liberar_memoria(lista_produtos[i]);
@@ -53,8 +54,6 @@ int produtos_menu_opcoes() {
     printf("===== Sistema de Registro de Produtos =====\n");
     printf("1 - Cadastrar produto\n");
     printf("2 - Exibir lista de produtos cadastrados\n");
-    printf("3 - Salvar lista de produtos em arquivo\n");
-    printf("4 - Ler lista de produtos de arquivo\n");
-    printf("5 - Sair do programa\n");
+    printf("3 - Sair do programa\n");
     printf("Escolha uma opcao:\n");
 }

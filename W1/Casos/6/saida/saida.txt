@@ -1,0 +1,56 @@
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 
+Lista de produtos cadastrados:
+Produto 1:
+Nome: banana
+Preco: 2.34
+Quantidade em estoque: 15
+Produto 2:
+Nome: maca
+Preco: 5.46
+Quantidade em estoque: 45
+Produto 3:
+Nome: laranja
+Preco: 3.14
+Quantidade em estoque: 45
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 
+Lista de produtos cadastrados:
+Produto 1:
+Nome: banana
+Preco: 2.34
+Quantidade em estoque: 15
+Produto 2:
+Nome: maca
+Preco: 5.46
+Quantidade em estoque: 45
+Produto 3:
+Nome: laranja
+Preco: 3.14
+Quantidade em estoque: 45
+===== Sistema de Registro de Produtos =====
+1 - Cadastrar produto
+2 - Exibir lista de produtos cadastrados
+3 - Sair do programa
+Escolha uma opcao: 
