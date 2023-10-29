@@ -8,7 +8,9 @@ Produtos* produto_criar() {
     produto->preco = 0;
     produto->quantidade = 0;
 
-    scanf("%s %f %d", produto->nome, &produto->preco, &produto->quantidade);
+    scanf("%[^\n]%*c", produto->nome);
+    scanf("%f%*c", &produto->preco);
+    scanf("%d%*c", &produto->quantidade);
     return produto;
 }
 
@@ -17,29 +19,41 @@ void produtos_liberar_memoria(Produtos* produto) {
 }
 
 Produtos** produtos_lista_criar(int *tamanho_lista) {
-    Produtos ** p = (Produtos *) malloc ( (*tamanho_lista) * sizeof(Produtos*) );
-    return (*p);
+    Produtos** p = malloc(*tamanho_lista * sizeof(Produtos*));
+    for(int i = 0; i < *tamanho_lista; i++)
+        p[i] = NULL;
+
+    return p;
 }
 
 void produtos_lista_cadastrar(Produtos **lista_produtos, int *tamanho_alocado, int *tamanho_lista) {
+    if (*tamanho_lista >= *tamanho_alocado) {
+        //Se a lista está cheia, realoque mais espaço
+        (*tamanho_alocado)++;
+        lista_produtos = (Produtos **)realloc(lista_produtos, *tamanho_alocado * sizeof(Produtos*));
+        lista_produtos[*tamanho_lista] = NULL;
+    }
 
+    lista_produtos[*tamanho_lista] = produto_criar(); 
+    (*tamanho_lista)++;
 }
 
 
 void produtos_lista_exibir(Produtos **lista_produtos, int *tamanho_lista) {
-    int i = 0, total = sizeof(lista_produtos)/sizeof(lista_produtos[0]);
+    if (lista_produtos == NULL) return;
+    int i = 0;
 
     printf("Lista de produtos cadastrados:\n");
-    for (i = 0; i < total; i++) {
-        printf("Produto %d:\n", i);
+    for (i = 0; i < *tamanho_lista; i++) {
+        printf("Produto %d:\n", i+1);
         printf("Nome: %s\n", lista_produtos[i]->nome);
         printf("Preco: %.2f\n", lista_produtos[i]->preco);
-        printf("Quantidade em estoque: %d\n\n", lista_produtos[i]->quantidade);
+        printf("Quantidade em estoque: %d\n", lista_produtos[i]->quantidade);
     }
 }
 
 void produtos_lista_liberar_memoria(Produtos** lista_produtos, int *tamanho_lista) {
-    int i = 0, total = sizeof(lista_produtos)/sizeof(lista_produtos[0]);
+    int i = 0, total = tamanho_lista;
     for (i = 0; i < total; i++) 
         produtos_liberar_memoria(lista_produtos[i]);
 
@@ -51,9 +65,12 @@ void produtos_sair() {
 }
 
 int produtos_menu_opcoes() {
+    int opcao = 0;
     printf("===== Sistema de Registro de Produtos =====\n");
     printf("1 - Cadastrar produto\n");
     printf("2 - Exibir lista de produtos cadastrados\n");
     printf("3 - Sair do programa\n");
-    printf("Escolha uma opcao:\n");
+    printf("Escolha uma opcao: \n");
+    scanf("%d%*c", &opcao);
+    return opcao;
 }

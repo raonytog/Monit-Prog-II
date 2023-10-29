@@ -1,0 +1,213 @@
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: Raony
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Raony:
+ - Diretório Resultados/Raony criado com sucesso!
+ - Diretório Resultados/Raony/main criado com sucesso!
+ - Diretório Resultados/Raony/produtos criado com sucesso!
+ - Diretório Resultados/Raony/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Raony/main.c' encontrado!
+ - Arquivo esperado 'Respostas/Raony/produtos.c' encontrado!
+ - Arquivo esperado 'Respostas/Raony/produtos.h' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/main
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Raony/main
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/main
+ - Pasta produtos:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/produtos
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/produtos
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Raony/produtos
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/produtos
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/completo
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/completo
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo produtos.c do aluno, gerando o produtos.o
+ - Arquivo de output gerado: Resultados/Raony/main/result_compilation.txt.
+ - Pasta produtos:
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo produtos.c do aluno, gerando o produtos.o
+ - Arquivo de output gerado: Resultados/Raony/produtos/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo produtos.c do aluno, gerando o produtos.o
+ - Arquivo de output gerado: Resultados/Raony/completo/result_compilation.txt.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do Raony:
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Raony/produtos
+ - Copiando o Gabarito-obj/produtos.o para a pasta Resultados/Raony/main
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/main/result_linking.txt
+ - Pasta produtos:
+ - Gerando o binário prog linkando com o(s) arquivo(s) produtos/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/produtos/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/completo/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 10:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 9, frees: 9, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 6, frees: 6, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 7:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 8:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 9:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 7, frees: 7, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 10:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/10/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 10, frees: 4, errors: 2.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 5, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 6, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 7:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/7/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 8:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta produtos / Caso 9:
+ - Arquivo de output gerado: Resultados/Raony/produtos/Casos/9/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 7, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 10:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/10/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 9, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 5, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 6, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 7:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/7/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 8:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 9:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/9/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 7, frees: 3, errors: 1.
+ - Resultado para o saida.txt: Ok!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: Raony
+ - Arquivos Corretos: 3 de 3 / Nota 10.00
+ - Compilações Corretas: 6 de 6 / Nota 10.00
+ - Linkagens Corretas: 3 de 3 / Nota 10.00
+ - Resultados Corretos main: 10 de 10 / Nota 10.00
+ - Valgrinds Corretos main: 10 de 10 / Nota 10.00
+ - Resultados Corretos produtos: 10 de 10 / Nota 10.00
+ - Valgrinds Corretos produtos: 3 de 10 / Nota 3.00
+ - Resultados Corretos completo: 10 de 10 / Nota 10.00
+ - Valgrinds Corretos completo: 3 de 10 / Nota 3.00
+ - Soma das notas do Raony: 76.000
+ - Campos Considerados: 9
+ - Média do Raony: 8.44
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+

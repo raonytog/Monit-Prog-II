@@ -2,30 +2,29 @@
 #include "produtos.h"
 
 int main () {
-    int acao = 0, i = 0;
-    int * tamanho = 0;
-    Produtos ** listaProdutos;
+    int acao = 0, tamanho = 6, total = 0;
+    Produtos ** listaProdutos = produtos_lista_criar(&tamanho);
 
     while (acao != 3) {
-        produtos_menu_opcoes(); // imprime o menu
-        scanf("%d", &acao);
-        scanf("%*c");
+        acao = produtos_menu_opcoes(); // imprime o menu e o usuario escolhe a acao
+
         switch (acao) {
             case 1: // cadastra produto
-                listaProdutos[i] = produto_criar();
-                i++;
+                produtos_lista_cadastrar(listaProdutos, &tamanho, &total);
                 break;
 
             case 2: // exibe lista dos produtos
-                produtos_lista_exibir(* listaProdutos, tamanho);
+                produtos_lista_exibir(listaProdutos, &total);
                 break;
 
             case 3:
-                produtos_lista_liberar_memoria(* listaProdutos, tamanho);
+                produtos_lista_liberar_memoria(listaProdutos, &tamanho);
                 produtos_sair(); // encerra o programa
                 break;
-            
 
+            default:
+                printf("Opcao informada nao existe!\n");
+                break;
         }
     }
     return 0;
