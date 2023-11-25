@@ -1,0 +1,2 @@
+Test Case: Resultados/Raony/matriz/Casos/2
+Valgrind result: allocs: 43 frees: 43 errors: 0 contexts: 0
